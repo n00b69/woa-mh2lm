@@ -1,4 +1,4 @@
-<img align="right" src="https://github.com/Icesito68/Port-Windows-11-Lg-G8x/blob/Lg-G8x/mh2lm.png" width="350" alt="Windows 11 Running On A Lg G8x">
+<img align="right" src="https://github.com/n00b69/woa-mh2lm/blob/main/mh2lm.png" width="350" alt="Windows 11 running on mh2lm">
 
 # Running Windows on the LG G8x
 
@@ -7,9 +7,11 @@
 ### Prerequisites
 - [Windows on ARM image](https://worproject.com/esd)
   
-- [Drivers](https://github.com/Icesito68/Port-Windows-11-Lge-devices/releases/tag/Drivers)
+- [Drivers](https://github.com/n00b69/woa-mh2lm/releases/tag/Drivers)
 
-- [Mass storage image](https://github.com/Icesito68/Port-Windows-11-Lge-devices/releases/download/Files/msc.img)
+- [Mass storage image](https://github.com/n00b69/woa-mh2lm/releases/download/Files/msc.img)
+
+- [Qfil](https://github.com/n00b69/woa-mh2lm/releases/tag/Qfil)
 
 ### Reboot to fastboot mode
 > If you don't have access to fastboot, use the instructions in the [partitioning guide](1-partition.md) to flash the engineering ABL.
@@ -17,9 +19,9 @@
 - If the phone in device manager is called **Android** and has a ⚠️ yellow warning triangle, you need to install fastboot drivers before you can continue.
 
 #### Boot to the mass storage UEFI
-> Replace **<path\to\msc.img>** with the actual path of the UEFI image
+> Replace **path\to\msc.img** with the actual path of the UEFI image
 ```cmd
-fastboot boot <path\to\msc.img>
+fastboot boot path\to\msc.img
 ```
 
 #### Enabling mass storage mode
@@ -73,18 +75,18 @@ exit
 > Go to Windows Explorer > This PC and select **WINMH2LM**. Right click and format as NTFS.
 
 ### Installing Windows
-> Replace `<path\to\install.esd>` with the actual path of install.esd (it may also be named install.wim)
+> Replace `path\to\install.esd` with the actual path of install.esd (it may also be named install.wim)
 
 ```cmd
-dism /apply-image /ImageFile:<path\to\install.esd> /index:6 /ApplyDir:X:\
+dism /apply-image /ImageFile:path\to\install.esd /index:6 /ApplyDir:X:\
 ```
 
-> If you get `Error 87`, check the index of your image with `dism /get-imageinfo /ImageFile:<path\to\install.esd>`, then replace `index:6` with the actual index number of Windows 11 Pro in your image
+> If you get `Error 87`, check the index of your image with `dism /get-imageinfo /ImageFile:path\to\install.esd`, then replace `index:6` with the actual index number of **Windows 11 Pro** in your image
 
 ### Installing Drivers
 > Unpack the driver archive, then open the `OfflineUpdater.cmd` file
 
-> Enter the drive letter of **WINMH2LM**, which should be X, then press enter
+> Enter the drive letter of **WINMH2LM**, which should be **X**, then press enter
 
 ### Boot into Windows
 Reboot your phone. If you end up in Android instead of Windows, flash the UEFI again using WOA Helper.
