@@ -1,6 +1,6 @@
-<img align="right" src="https://github.com/n00b69/woa-flashlmdd/blob/main/flashlmdd.png" width="350" alt="Windows 11 running on flashlmdd">
+<img align="right" src="https://github.com/n00b69/woa-mh2lm/blob/main/mh2lm.png" width="350" alt="Windows 11 running on mh2lm">
 
-# Running Windows on the LG V50
+# Running Windows on the LG G8x
 [![telegram](https://img.shields.io/badge/chat-telegram-brightgreen.svg?logo=telegram&style=flat-square)](https://t.me/lgedevices)
 
 ## ⚠️ Warning
@@ -11,7 +11,7 @@ This project is in an early stage, all the files here have been contributed by o
 **IF YOU AREN'T COMFORTABLE MODDING YOUR PHONE OR ITS PARTITION TABLE OR YOU ARE PARANOID OF BRICKING YOUR DEVICE CLICK AWAY NOW!!! YOU HAVE BEEN WARNED, YOU ARE ON YOUR OWN IF YOU BRICK YOUR DEVICE!!! AGAIN! YOU HAVE BEEN WARNED!!!**
 
 > [!Important]
-> This guide is for the LG V50. If you are looking to install Windows on the LG V50S, use [this guide](https://github.com/n00b69/woa-mh2lm5g) instead.
+> This guide is for the LG G8x. Click the links here if you are looking for the [LG G8s](https://github.com/n00b69/woa-betalm) or the [LG G8](https://github.com/n00b69/woa-alphaplus) guides.
 
 ## Get started
 - [Project status](guide/status.md)
