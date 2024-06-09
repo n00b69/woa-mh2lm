@@ -1,4 +1,4 @@
-<img align="right" src="https://github.com/Icesito68/Port-Windows-11-Lg-G8x/blob/Lg-G8x/mh2lm.png" width="350" alt="Windows 11 Running On A Lg G8x">
+<img align="right" src="https://github.com/n00b69/woa-mh2lm/blob/main/mh2lm.png" width="350" alt="Windows 11 running on mh2lm">
 
 # Running Windows on the LG G8x
 
@@ -14,7 +14,7 @@ You can also find a list of dedicated ARM software [at this link](https://armrep
 > [!Warning]
 > Disable USB host mode if you use a poweref USB hub, as this can irreversibly damage your device. If you don't use a powered USB hub, enable USB host mode or you will not be able to use any USB devices.
 
-Run [USB Host Control](https://github.com/erdilS/Port-Windows-11-Xiaomi-Pad-5/releases/tag/USBHost) to enable/disable USB host mode, confirm that you want to disable/enable USB host mode and then confirm the reboot
+Run [USB Host Control](https://github.com/Misha803/My-Scripts/releases/tag/USB-Host-Mode-Control) to enable/disable USB host mode, confirm that you want to disable/enable USB host mode and then confirm the reboot
 
 ##### Finished!
 
