@@ -1,4 +1,4 @@
-<img align="right" src="https://github.com/n00b69/woa-flashlmdd/blob/main/flashlmdd.png" width="350" alt="Windows 11 running on flashlmdd">
+<img align="right" src="https://github.com/n00b69/woa-mh2lm/blob/main/mh2lm.png" width="350" alt="Windows 11 running on mh2lm">
 
 # Running Windows on the LG V50
 
@@ -8,13 +8,13 @@
 ### Prerequisites
 - [ADB & Fastboot](https://developer.android.com/studio/releases/platform-tools)
 
-- [Qfil](https://github.com/n00b69/woa-flashlmdd/releases/tag/Qfil)
+- [Qfil](https://github.com/n00b69/woa-mh2lm/releases/tag/Qfil)
 
 - [QFILHelper](https://github.com/Beliathal/QFILHelper) Optional, for easier partition backups
 
-- [Parted script](https://github.com/n00b69/woa-flashlmdd/releases/download/Files/parted)
+- [Parted script](https://github.com/n00b69/woa-mh2lm/releases/download/Files/parted)
 
-- [Engineering ABL](https://github.com/n00b69/woa-flashlmdd/releases/download/Files/engabl_ab.bin)
+- [Engineering ABL](https://github.com/n00b69/woa-mh2lm/releases/download/Files/engabl_ab.bin)
   
 - Any custom recovery
 
