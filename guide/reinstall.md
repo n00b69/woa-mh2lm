@@ -11,8 +11,6 @@
 
 - [Mass storage image](https://github.com/n00b69/woa-mh2lm/releases/download/Files/msc.img)
 
-- [Qfil](https://github.com/n00b69/woa-mh2lm/releases/tag/Qfil)
-
 ### Reboot to fastboot mode
 > If you don't have access to fastboot, use the instructions in the [partitioning guide](1-partition.md) to flash the engineering ABL.
 - With the device turned off, hold the **volume down** button, then plug the cable in.
