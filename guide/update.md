@@ -1,11 +1,11 @@
-<img align="right" src="https://github.com/Icesito68/Port-Windows-11-Lg-G8x/blob/Lg-G8x/mh2lm.png" width="350" alt="Windows 11 Running On To LG G8x">
+<img align="right" src="https://github.com/n00b69/woa-mh2lm/blob/main/mh2lm.png" width="350" alt="Windows 11 running on mh2lm">
 
 # Running Windows on the LG G8x
 
 ## Updating drivers
 
 ### Prerequisites
-- [Drivers](https://github.com/Icesito68/Port-Windows-11-Lge-devices/releases/tag/Drivers)
+- [Drivers](https://github.com/n00b69/woa-mh2lm/releases/tag/Drivers)
 
 ### Boot into Windows
 > Flash the UEFI image in fastboot or use the WOA Helper app
