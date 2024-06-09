@@ -1,11 +1,11 @@
-<img align="right" src="https://github.com/Icesito68/Port-Windows-11-Lg-G8x/blob/Lg-G8x/mh2lm.png" width="350" alt="Windows 11 Running On A Lg G8x">
+<img align="right" src="https://github.com/n00b69/woa-mh2lm/blob/main/mh2lm.png" width="350" alt="Windows 11 running on mh2lm">
 
 # Running Windows on the LG G8x
 
 ## Dualbooting Android and Windows seamlessly
 
 ### Prerequisites
-- [UEFI image](https://github.com/Icesito68/Port-Windows-11-Lge-devices/releases/tag/UEFI)
+- [UEFI image](https://github.com/n00b69/woa-alphaplus/releases/tag/UEFI)
   
 - [WOA Helper app](https://github.com/Marius586/WoA-Helper-update/releases/tag/WOA)
 
