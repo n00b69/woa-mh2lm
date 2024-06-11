@@ -17,7 +17,7 @@
 - If the phone in device manager is called **Android** and has a ⚠️ yellow warning triangle, you need to install fastboot drivers before you can continue.
 
 #### Boot to the mass storage UEFI
-> Replace **path\to\msc.img** with the actual path of the UEFI image
+> Replace `path\to\msc.img` with the actual path of the UEFI image
 ```cmd
 fastboot boot path\to\msc.img
 ```
@@ -82,9 +82,9 @@ dism /apply-image /ImageFile:path\to\install.esd /index:6 /ApplyDir:X:\
 > If you get `Error 87`, check the index of your image with `dism /get-imageinfo /ImageFile:path\to\install.esd`, then replace `index:6` with the actual index number of **Windows 11 Pro** in your image
 
 ### Installing Drivers
-> Unpack the driver archive, then open the `OfflineUpdater.cmd` file
+> Unpack the driver archive, then open the `OfflineUpdater.cmd` file (if an error shows up, run `OfflineUpdaterFix.cmd` instead)
 
-> Enter the drive letter of **WINMH2LM**, which should be **X**, then press enter
+> If it asks you to enter a letter, enter the drive letter of **WINMH2LM** (which should be **X**), then press enter
 
 ### Boot into Windows
 Reboot your phone. If you end up in Android instead of Windows, flash the UEFI again using WOA Helper.
