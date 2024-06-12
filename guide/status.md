@@ -11,17 +11,17 @@ Beta. Most of the hardware works, but some components do not work yet.
 - [x] Bluetooth
 - [x] Brightness
 - [ ] Camera
-- [x] Charging ```DEAD slow```
+- [x] Charging (USB) ```VERY slow```
+- [x] Charging (Wireless)
 - [x] Display
 - [ ] Dual Screen For LG
 - [x] GPU
-- [ ] LTE 
+- [ ] LTE/SMS
 - [x] SD 
 - [x] Touchscreen
 - [x] UFS
-- [x] USB ```sometimes doesn't work after charging```
+- [x] USB
 - [x] WiFi
-- [x] Wireless charging
 
 #### Sensors
 - [ ] Accelerometer
