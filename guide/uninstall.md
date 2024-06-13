@@ -6,25 +6,18 @@
 
 ### Prerequisites
 - [ADB & Fastboot](https://developer.android.com/studio/releases/platform-tools)
-
-- [Qfil](https://github.com/n00b69/woa-mh2lm/releases/tag/Qfil) (to restore partitions)
   
 - [Parted script](https://github.com/n00b69/woa-mh2lm/releases/download/Files/parted)
   
 - [TWRP or Orange Fox](https://github.com/n00b69/woa-mh2lm/releases/tag/Recoveries)
-  
-- Boot backups
 
-#### Restore boot backups
-> Go to EDL mode and use Qfil to restore your boot_a and boot_b backups
-
-#### Boot TWRP on the device
+### Boot TWRP on the device
 > Use the Magisk module linked above if you don't already have it installed
 
 #### Unmount all partitions
 > Go to mount in TWRP and unmount all partitions
 
-#### Run parted
+### Run parted
 > Put parted in your platform tools folder, then run
 ```cmd
 adb push parted /cache && chmod 755 /cache/parted && /parted /dev/block/sda
@@ -54,11 +47,11 @@ resizepart 30
 quit
 ```
 
-#### Format data
+### Format data
 Go to the Wipe menu in TWRP and press Format Data, then type `yes`
 
 #### Check if Android boots
-Reboot your device and check if Android boots
+Reboot your device and check if Android boots.
 
 ## Finished!
 
