@@ -18,7 +18,7 @@ Beta. Most of the hardware works, but some components do not work yet.
 - [ ] Dual Screen For LG
 - [x] GPU
 - [ ] LTE/SMS
-- [x] SD 
+- [x] SD Card
 - [x] Touchscreen
 - [x] UFS
 - [x] USB
