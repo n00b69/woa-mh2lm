@@ -21,7 +21,7 @@ Beta. Most of the hardware works, but some components do not work yet.
 - [x] SD Card
 - [x] Touchscreen
 - [x] UFS
-- [x] USB
+- [x] USB ```doesn't work after charging```
 - [x] WiFi
 
 #### Sensors
