@@ -74,7 +74,7 @@ cd path\to\platform-tools
 - Do the same thing for **abl_b**.
 
 #### Reboot to fastboot mode
-- Reboot your phone.
+- Reboot your phone by holding **volume down** + **power** until it shows the LG logo, then release the buttons.
 - After it has booted, unplug the cable and power it off.
 - Once the device has turned off, hold the **volume down** button, then plug the cable back in.
 - If the phone in device manager is called **Android** and has a ⚠️ yellow warning triangle, you need to install fastboot drivers before you can continue.
