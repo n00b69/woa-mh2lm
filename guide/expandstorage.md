@@ -1,6 +1,6 @@
 <img align="right" src="https://github.com/n00b69/woa-mh2lm/blob/main/mh2lm.png" width="350" alt="Windows 11 running on mh2lm">
 
-# Running Windows on the LG V50
+# Running Windows on the LG G8x
 
 ## Expanding your phone's storage
 > Due to LG bullshit, this phone only comes with a 128GB option and forced A/B partitions, which take up precious space. This guide will explain to you how you can delete the B partitions of your phone, to get back 8-10GB of extra space.
@@ -12,11 +12,9 @@
 
 - [QFILHelper](https://github.com/Beliathal/QFILHelper) Optional, for easier partition backups
 
-- [Parted script](https://github.com/n00b69/woa-mh2lm/releases/download/Files/parted)
-
 - [Engineering ABL](https://github.com/n00b69/woa-mh2lm/releases/download/Files/engabl_ab.bin)
   
-- Any custom recovery
+- [Modded TWRP](https://github.com/n00b69/woa-mh2lm/releases/download/Recoveries/Modded-twrp-g8x.img)
 
 ### Notes
 > [!WARNING]
@@ -25,7 +23,7 @@
 > 
 > YOU CAN BREAK YOUR DEVICE WITH THE COMMANDS BELOW IF YOU DO THEM WRONG!!!
 >
-> DO NOT REBOOT YOUR PHONE! If you think you made a mistake, ask for help in the [Telegram chat](https://t.me/lgedevices).
+> DO NOT REBOOT YOUR PHONE! If you think you made a mistake, ask for help in the [Telegram chat](https://t.me/woahelperchat).
 
 #### Setting up Qfil
 - Open **Qfil**.
@@ -64,19 +62,27 @@
 - Select and flash the **engabl_ab.bin** file.
 - Do the same thing for **abl_b**.
 
-#### Reboot your phone
-> Hold **volume down** + **power** until it shows the LG logo, then release the buttons.
+#### Reboot to fastboot mode
+- Hold **volume down** + **power** until it shows the LG logo, then release the buttons.
+- After it has booted, unplug the cable and power it off.
+- Once the device has turned off, hold the **volume down** button, then plug the cable back in.
+- If the phone in device manager is called **Android** and has a ⚠️ yellow warning triangle, you need to install fastboot drivers before you can continue.
 
-#### Boot into any custom recovery
-> Such as Lineage recovery, OFOX, or TWRP, which should be accessible by holding the **volume up** + **power** buttons, or with the Reboot to recovery button in Magisk
+#### Boot into TWRP
+> Replace `path\to\modded-twrp-g8x.img` with the actual path of the provided TWRP image
+>
+> After booting into TWRP, leave the device on the main screen. You can press the power button to turn the display off, if you want
+```cmd
+fastboot boot path\to\modded-twrp-g8x.img
+```
 
 #### Unmount all partitions
 Go to mount in your recovery and unmount all partitions
 
 ### Preparing for partitioning
-> Download the parted file and move it in the platform-tools folder, then run
+> Replug the cable if it says "no devices/emulators found"
 ```cmd
-adb push parted /cache/ && adb shell "chmod 755 /cache/parted" && adb shell /cache/parted /dev/block/sda
+adb shell parted /dev/block/sda
 ```
 
 #### Printing the current partition table
@@ -160,5 +166,9 @@ quit
 > After you've booted into Android, make sure you disable all system updates. These may softbrick your device by attempting to install updates to partitions that no longer exist.
 
 ## Finished!
+
+
+
+
 
 
