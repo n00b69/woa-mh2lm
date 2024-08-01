@@ -13,8 +13,6 @@
 
 ### Reboot to fastboot mode
 - With the device turned off, hold the **volume down** button, then plug the cable in.
-- If the phone in device manager is called **Android** and has a ⚠️ yellow warning triangle, you need to install fastboot drivers before you can continue.
-- To install fastboot drivers, extract the contents of **QUD.zip** somewhere, right click on **Android**, click on **Update driver** and **Browse my computer for drivers**, then find and select the **QUD** folder.
 
 #### Boot to the mass storage mode image
 > Replace `path\to\msc.img` with the actual path of the image
