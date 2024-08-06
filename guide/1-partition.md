@@ -59,8 +59,8 @@ cd path\to\platform-tools
 - If it still fails, try to repeat the last step a few times. You can also try rebooting your phone and PC.
 
 #### Backing up your partitions
-- In the Partition manager, right click on **laf_a** > **Manage Partition Data** and press **Read Data**.
-- Do the same thing for **boot_a**, **abl_a**, **aop_a**, **xbl_a**, **fsg**, **fsc**, **modemst1**, **modemst2** and **modem_a**
+- In the Partition manager, right click on **abl_a** > **Manage Partition Data** and press **Read Data**.
+- Do the same thing for **fsg**, **fsc**, **modemst1**, **modemst2** and **modem_a**
 - If you want to be on the safe side, you can also use [QFILHelper](https://github.com/Beliathal/QFILHelper) to additionally back up every partition. In this guide we only back up the most critical partitions.
 
 > [!Important]
