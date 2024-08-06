@@ -88,14 +88,19 @@ cd path\to\platform-tools
 fastboot boot path\to\modded-twrp-g8x.img
 ```
 
+### Backing up your boot image
+> This will back up your current boot image in the current directory
+```cmd
+adb pull /dev/block/by-name/boot_a boot.img
+```
+
 ### Preparing for partitioning
-> Replug the cable if it says "no devices/emulators found"
 ```cmd
 adb shell parted /dev/block/sda
 ```
 
 #### Printing the current partition table
-> Parted will print the list of partitions, **userdata** should be the last partition in the list.
+> This will print a list of partitions on your phone
 ```cmd
 print
 ```
@@ -145,9 +150,9 @@ quit
 
 ### Reboot your phone
 > Once it is booted, it will tell you decryption was unsuccesful and it will ask you to erase all data.
-- Press this button to erase all data, let the phone boot back up, then reboot back to fastboot mode.
+- Press this button to erase all data, then set up your phone (make sure to also enable USB debugging in developer settings).
 
-## [Next step: Installing Windows](2-install.md)
+## [Next step: Rooting your phone](2-root.md)
 
 
 
