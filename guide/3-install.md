@@ -35,7 +35,7 @@ diskpart
 ```
 
 #### Select the Windows volume of the phone
-> Use `list volume` to find it, replace `$` with the actual number of **WINMH2LM5G**
+> Use `list volume` to find it, replace `$` with the actual number of **WINMH2LM**
 ```diskpart
 select volume $
 ```
@@ -46,7 +46,7 @@ assign letter x
 ```
 
 #### Select the ESP volume of the phone
-> Use `list volume` to find it, replace `$` with the actual number of **ESPMH2LM5G**
+> Use `list volume` to find it, replace `$` with the actual number of **ESPMH2LM**
 ```diskpart
 select volume $
 ```
