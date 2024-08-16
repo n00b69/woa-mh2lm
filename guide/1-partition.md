@@ -148,6 +148,16 @@ set $ esp on
 quit
 ```
 
+#### Formatting Windows drive
+```cmd
+adb shell mkfs.ntfs -f /dev/block/by-name/win -n WINMH2LM
+```
+
+#### Formatting ESP drive
+```cmd
+adb shell mkfs.fat -F32 -s1 /dev/block/by-name/esp -n ESPMH2LM
+```
+
 ### Format all data
 Go to the Wipe menu in your recovery and wipe all data. If this doesn't work, simply reboot your phone.
 
