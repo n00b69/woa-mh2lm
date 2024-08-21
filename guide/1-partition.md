@@ -150,7 +150,7 @@ quit
 
 ### Formatting Windows drive
 ```cmd
-adb shell mkfs.ntfs -f /dev/block/by-name/win -n WINMH2LM
+adb shell mkfs.ntfs -f /dev/block/by-name/win -L WINMH2LM
 ```
 
 ### Formatting ESP drive
