@@ -26,6 +26,9 @@ fastboot boot path\to\msc.img
 - Select **USB Attached SCSI (UAS) Storage**.
 - Press the **power** button twice to confirm.
 
+> [!Note]
+> If you are facing issues (e.g your device randomly reboots), follow [the steps described in this guide](https://github.com/n00b69/woa-mh2lm/blob/main/guide/troubleshooting.md#the-device-reboots-in-mass-storage-mode) for an alternative way of entering mass storage mode.
+
 ### Diskpart
 > [!WARNING]
 > DO NOT ERASE ANY PARTITION WHILE IN DISKPART!!!! THIS WILL ERASE YOUR ENTIRE UFS!!!! THIS MEANS THAT YOUR DEVICE WILL BE PERMANENTLY BRICKED WITH NO SOLUTION! (except for flashing it with EDL, which is complicated)
