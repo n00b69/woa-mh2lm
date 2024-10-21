@@ -5,6 +5,15 @@
 ## Troubleshooting Issues
 > Below you will find a list of common problems and their solutions
 
+## The device reboots in mass storage mode
+> This happens for some users, it is unknown why it happens, to bypass this, do the following:
+- Reboot back into the modified TWRP and run `adb shell parted /dev/block/sda`, then run `print`.
+- Run `set $ esp off` and `set $ msftdata on`, replacing **$** with the actual number of the esp partition (should be 31).
+- Boot into fastboot mode using `adb reboot bootloader`, then download [**LGG8XMassStorageBoot.img**](https://github.com/n00b69/woa-mh2lm/releases/download/Files/LGG8XMassStorageBoot.img) and boot into it using `fastboot boot path\to\LGG8XMassStorageBoot.img`.
+- After you finish the installation guide, before booting the Windows UEFI, return to TWRP, reopen **parted** and run `set $ esp on` and `set $ msftdata off`.
+
+##### Finished!
+
 ## Cannot mount Windows in Android
 If mounting Windows produces an empty folder, you either don't have Windows installed, or your rom does not have mount support.
 
@@ -22,11 +31,6 @@ Solution: Install **LineageOS 20**
 
 ## USB does not work
 Enable USB host mode using the [additional materials guide](materials.md).
-
-##### Finished!
-
-## DISM Error:87 The add-driver option is unkown
-This usually means that you have an unclean Windows image with some other drivers. You need to get a clean Windows image (which means you didn't follow instructions).
 
 ##### Finished!
 
