@@ -5,80 +5,32 @@
 ## Reinstalling Windows
 
 ### Prerequisites
-- [Windows on ARM image](https://arkt-7.github.io/woawin/)
-  
-- [Drivers](https://github.com/n00b69/woa-mh2lm/releases/tag/Drivers)
+- [ADB & Fastboot](https://developer.android.com/studio/releases/platform-tools)
 
-- [Mass storage image](https://github.com/n00b69/woa-mh2lm/releases/download/Files/msc.img)
+- [Modded TWRP](https://github.com/n00b69/woa-mh2lm/releases/download/Recoveries/Modded-twrp-g8x.img)
 
-### Reboot to fastboot mode
+### Reboot into fastboot mode
 > If you don't have access to fastboot, use the instructions in the [partitioning guide](1-partition.md) to flash the engineering ABL.
 - With the device turned off, hold the **volume down** button, then plug the cable in.
-- If the phone in device manager is called **Android** and has a ⚠️ yellow warning triangle, you need to install fastboot drivers before you can continue.
 
-#### Boot to the mass storage UEFI
-> Replace `path\to\msc.img` with the actual path of the UEFI image
+#### Boot into the modded TWRP
+> Replace `path\to\modded-twrp-g8x.img` with the actual path of the provided TWRP image
+>
+> After booting into TWRP, leave the device on the main screen. You can press the power button to turn the display off, if you want
 ```cmd
-fastboot boot path\to\msc.img
+fastboot boot path\to\modded-twrp-g8x.img
 ```
 
-#### Enabling mass storage mode
-> Once booted into the UEFI, use the volume buttons to navigate the menu and the power button to confirm
-- Select **UEFI Boot Menu**.
-- Select **USB Attached SCSI (UAS) Storage**.
-- Press the **power** button twice to confirm.
-
-> [!Note]
-> After 1-2 minutes **WINMH2LM** should automatically appear in Windows Explorer. If it does, skip to the "Formatting Windows" step, else continue with the "Diskpart" steps.
-
-### Diskpart
+### Formatting Windows and ESP partitions
 ```cmd
-diskpart
+adb shell mkfs.ntfs -f /dev/block/by-name/win -L WINMH2LM
 ```
-
-#### Select the Windows volume of the phone
-> Use `list volume` to find it, replace `$` with the actual number of **WINMH2LM**
-```diskpart
-select volume $
-```
-
-#### Assign the letter X
-```diskpart
-assign letter x
-```
-
-#### Exit diskpart
-```cmd
-exit
-```
-
-#### Formatting Windows
-> Go to Windows Explorer > This PC and select **WINMH2LM**. Right click and format as NTFS.
-
-### Installing Windows
-> Replace `path\to\install.esd` with the actual path of install.esd (it may also be named install.wim)
 
 ```cmd
-dism /apply-image /ImageFile:path\to\install.esd /index:6 /ApplyDir:X:\
+adb shell mkfs.fat -F32 -s1 /dev/block/by-name/esp -n ESPMH2LM
 ```
 
-> If you get `Error 87`, check the index of your image with `dism /get-imageinfo /ImageFile:path\to\install.esd`, then replace `index:6` with the actual index number of **Windows 11 Pro** in your image
-
-### Installing Drivers
-> Unpack the driver archive, then open the `OfflineUpdater.cmd` file (if an error shows up, run `OfflineUpdaterFix.cmd` instead)
-
-> If it asks you to enter a letter, enter the drive letter of **WINMH2LM** (which should be **X**), then press enter
-
-### Boot into Windows
-Reboot your phone. If you end up in Android instead of Windows, flash the UEFI again using WOA Helper.
-
-#### Setting up Windows
-> Your device will now set up Windows. This will take some time. It will eventually reboot, and after that the initial setup (oobe) should launch.
-
-> [!Tip]
-> If you wish to skip the Microsoft Account login, press the **I don't have internet** button in the WiFi page, then when prompted, press the **Continue with limited setup** button.
-
-## Finished!
+## [Next step: Reinstalling Windows](3-install.md)
 
 
 
