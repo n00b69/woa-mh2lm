@@ -105,20 +105,6 @@ bcdedit /store Y:\EFI\Microsoft\BOOT\BCD /set "{default}" recoveryenabled no
 bcdedit /store Y:\EFI\Microsoft\BOOT\BCD /set "{default}" nointegritychecks on
 ```
 
-### Reboot to EDL
-> If you didn't flash the engineering ABL on the previous page, you can skip this step and the next one and simply reboot your device
-- Open **Device Manager** on your PC
-- Hold **volume down** + **power**.
-- After the LG logo appears, while still holding **volume down** + **power**, start rapidly pressing the **volume up** button.
-- Keep doing this until you hear a USB connection sound on your PC, or when **Qualcomm HS-USB QDLoader 9008** appears in the **Ports (COM & LPT)** category of Device Manager.
-
-#### Flashing stock ABL
-> Or your IMEI won't work
-- In **Qfil**, select Tools > Partition manager, and click **Ok**.
-- Right click on **abl_a** > **Manage Partition Data** and press **Load Image**.
-- Select and flash the **abl_a** file in `C:\Users\YOURNAME\AppData\Roaming\Qualcomm\QFIL\COMPORT_#\`
-- Do the same thing for **abl_b**.
-
 #### Reboot back to Android
 - Hold **volume down** + **power** until it shows the LG logo, then release the buttons.
 
