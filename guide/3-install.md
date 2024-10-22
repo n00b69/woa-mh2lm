@@ -13,10 +13,10 @@
 
 - [UEFI image](https://github.com/n00b69/woa-mh2lm/releases/tag/UEFI)
 
-### Reboot to fastboot mode
+### Reboot into fastboot mode
 - With the device turned off, hold the **volume down** button, then plug the cable in.
 
-#### Boot to the mass storage mode image
+#### Boot into the mass storage mode image
 > Replace `path\to\msc.img` with the actual path of the image
 ```cmd
 fastboot boot path\to\msc.img
