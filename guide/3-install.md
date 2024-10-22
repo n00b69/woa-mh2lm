@@ -5,11 +5,13 @@
 ## Installing Windows
 
 ### Prerequisites
+- [Mass storage image](https://github.com/n00b69/woa-mh2lm/releases/download/Files/msc.img)
+
 - [Windows on ARM image](https://arkt-7.github.io/woawin/)
   
 - [Drivers](https://github.com/n00b69/woa-mh2lm/releases/tag/Drivers)
 
-- [Mass storage image](https://github.com/n00b69/woa-mh2lm/releases/download/Files/msc.img)
+- [UEFI image](https://github.com/n00b69/woa-mh2lm/releases/tag/UEFI)
 
 ### Reboot to fastboot mode
 - With the device turned off, hold the **volume down** button, then plug the cable in.
@@ -31,8 +33,7 @@ fastboot boot path\to\msc.img
 
 ### Diskpart
 > [!WARNING]
-> DO NOT ERASE ANY PARTITION WHILE IN DISKPART!!!! THIS WILL ERASE YOUR ENTIRE UFS!!!! THIS MEANS THAT YOUR DEVICE WILL BE PERMANENTLY BRICKED WITH NO SOLUTION! (except for flashing it with EDL, which is complicated)
-
+> DO NOT ERASE, CREATE OR OTHERWISE MODIFY ANY PARTITION WHILE IN DISKPART!!!! THIS CAN ERASE ALL OF YOUR UFS OR PREVENT YOU FROM BOOTING TO FASTBOOT!!!! THIS MEANS THAT YOUR DEVICE WILL BE PERMANENTLY BRICKED WITH NO SOLUTION! (except for flashing it with EDL, which is complicated)
 ```cmd
 diskpart
 ```
@@ -105,8 +106,24 @@ bcdedit /store Y:\EFI\Microsoft\BOOT\BCD /set "{default}" recoveryenabled no
 bcdedit /store Y:\EFI\Microsoft\BOOT\BCD /set "{default}" nointegritychecks on
 ```
 
-#### Reboot back to Android
-- Hold **volume down** + **power** until it shows the LG logo, then release the buttons.
+#### Remove the drive letter for ESP
+> If this does not work, ignore it and skip to the next command. This phantom drive will disappear the next time you reboot your PC.
+```cmd
+mountvol y: /d
+```
+
+### Rebooting into fastboot mode
+- Reboot into fastboot mode by holding the **volume down** + **power** buttons until the text on the screen disappears, then immediately release the **power** button whilst continuing to hold **volume down**.
+> If your phone turns on instead, turn it off while the cable is plugged in, and keep holding tbe **volume down** button until it enters fastboot mode.
+
+### Boot into the UEFI
+> Replace `path\to\mh2lm-uefi.img` with the actual path of the image
+```cmd
+fastboot boot path\to\mh2lm-uefi.img
+```
+
+### Reboot into Android
+Your device should reboot by itself after +- 10 minutes of waiting, after which you will be booted into Android, for the last step.
 
 ## [Last step: Setting up dualboot](4-dualboot.md)
 
