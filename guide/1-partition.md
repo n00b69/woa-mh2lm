@@ -96,6 +96,11 @@ fastboot boot path\to\modded-twrp-g8x.img
 adb pull /dev/block/by-name/boot_a boot.img
 ```
 
+#### Unmount data
+```cmd
+adb shell umount /dev/block/by-name/userdata
+```
+
 ### Preparing for partitioning
 ```cmd
 adb shell parted /dev/block/sda
@@ -118,25 +123,23 @@ rm $
 #### Recreating userdata
 > Replace **17.7GB** with the former start value of **userdata** which we just deleted
 >
-> Replace **60GB** with the end value you want **userdata** to have. In this example Android will have 60GB-17.7GB = 42.3GB of usable storage space.
+> Replace **64GB** with the end value you want **userdata** to have. In this example Android will have 64GB-17.7GB = **46.3GB** of usable storage space.
 ```cmd
-mkpart userdata ext4 17.7GB 60GB
+mkpart userdata ext4 17.7GB 64GB
 ```
 
 #### Creating ESP partition
-> Replace **60GB** with the end value of **userdata**
+> Replace **64GB** with the end value of **userdata**
 >
-> Replace **60.3GB** with the value you used before, adding **0.3GB** to it
+> Replace **64.3GB** with the value you used before, adding **0.3GB** to it
 ```cmd
-mkpart esp fat32 60GB 60.3GB
+mkpart esp fat32 64GB 64.3GB
 ```
 
 #### Creating Windows partition
-> Replace **60.3GB** with the end value of **esp**
->
-> Replace **126GB** with the end value of your disk, use `p free` to find it
+> Replace **64.3GB** with the end value of **esp**
 ```cmd
-mkpart win ntfs 60.3GB 126GB
+mkpart win ntfs 64.3GB 126GB
 ```
 
 #### Making ESP bootable
