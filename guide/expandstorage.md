@@ -31,7 +31,7 @@
 - In "Select programmer", select the downloaded firehose.
 - In "Configuration", make sure the "Device Type" is set to **UFS**.
 
-#### Boot to EDL
+#### Boot into EDL
 - Open **Device Manager** on your PC
 - With the phone turned off, hold **volume down** + **power**.
 - After the LG logo appears, while still holding **volume down** + **power**, start rapidly pressing the **volume up** button.
