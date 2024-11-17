@@ -9,7 +9,7 @@
 
 - [ADB & Fastboot](https://developer.android.com/studio/releases/platform-tools)
 
-### Copying your boot image to Android
+### Copying your boot image into Android
 - Connect your phone to your computer (with USB debugging enabled).
 - Click the prompt on your phone to allow your computer to access your phone's data. If no prompt appears, go to your notification panel and click the USB notification, then change the connection type to **transferring files**.
 - Copy the **boot.img** file from the **platform-tools** folder into your internal storage.
