@@ -7,7 +7,7 @@
 ### Prerequisites
 - [ADB & Fastboot](https://developer.android.com/studio/releases/platform-tools) 
   
-- [Modded TWRP](https://github.com/n00b69/woa-mh2lm/releases/download/Recoveries/Modded-twrp-g8x.img) 
+- [Modded TWRP](https://github.com/n00b69/woa-mh2lm/releases/download/Files/modded-twrp-g8x.img) 
 
 ### Notes
 > [!WARNING]
