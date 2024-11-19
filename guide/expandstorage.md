@@ -14,7 +14,7 @@
 
 - [Engineering ABL](https://github.com/n00b69/woa-mh2lm/releases/download/Files/engabl_ab.bin)
   
-- [Modded TWRP](https://github.com/n00b69/woa-mh2lm/releases/download/Recoveries/Modded-twrp-g8x.img)
+- [Modded TWRP](https://github.com/n00b69/woa-mh2lm/releases/download/Files/modded-twrp-g8x.img)
 
 ### Notes
 > [!WARNING]
