@@ -3,19 +3,15 @@
 # Running Windows on the LG G8x
 
 ## Installing Windows without a PC
-> [!Warning]
-> This guide currently requires you to have LineageOS 20 installed, install it first if you haven't already.
->
-> Decryption in TWRP does not work on stock LG roms.
 
 ### Prerequisites
-- A rooted LG G8x running LineageOS 20
+- A rooted LG G8x with LineageOS 20 or an SD card
 
 - [Magisk](https://github.com/topjohnwu/Magisk/releases/latest)
 
 - [Modified TWRP](https://github.com/n00b69/woa-mh2lm/releases/download/Files/modded-twrp-g8x-installer.zip)
 
-- [LG G8x WinInstaller](https://github.com/n00b69/woa-mh2lm/releases/download/Files/Mh2lmWinInstaller.zip)
+- [WinInstaller (LOS20)](https://github.com/n00b69/woa-mh2lm/releases/download/Files/Mh2lmWinInstaller.zip) or [WinInstaller (SD card)](https://github.com/n00b69/woa-mh2lm/releases/download/Files/Mh2lmWinInstallerSDCARD.zip) (If you are using an SD card)
 
 - [Windows on ARM image](https://arkt-7.github.io/woawin/)
 
@@ -31,7 +27,8 @@
 > This guide assumes you have already unlocked your bootloader and are already rooted, if this is not the case, you'll still need a PC to do that.
 
 ### Flash the modified TWRP
-- Download **Magisk.apk** and rename it to **Magisk.zip** and leave it in your `Download` folder. This is necessary because flashing TWRP will remove your root.
+- Download **Magisk.apk** on your phone and rename it to **Magisk.zip**. This is necessary because flashing TWRP will remove your root.
+- If you are not using LineageOS 20, copy it to your SD card. TWRP cannot decrypt the internal storage of other ROMs.
 - In **Magisk**, select the **modded-twrp-g8x-installer.zip** and flash it.
 - Return to the main menu, press the rotating arrow icon in the top right, and press `Reboot Recovery`.
 
@@ -47,11 +44,14 @@
 - Run all future commands in this terminal
 
 #### Unmount data
+> Ignore any possible errors and continue
 ```cmd
 umount /dev/block/by-name/userdata
 ```
 
 #### Preparing for partitioning
+> [!Note]
+> If at any time **parted** asks you if you want to continue, or if you want to cancel something, type **yes** or **ignore**.
 ```cmd
 parted /dev/block/sda
 ```
@@ -65,7 +65,7 @@ print
 #### Removing userdata
 > Replace **$** with the number of the **userdata** partition, which should be **30**
 >
-> If you have a **grow** partition, remove it as well
+> If you have a **grow** partition, remove it as well
 ```cmd
 rm $
 ```
@@ -111,7 +111,7 @@ quit
 > If Android does not start after +- 10 minutes, reboot back into stock recovery and perform a factory reset there.
 
 ### Preparing necessary files
-- Download the Windows image and make sure it remains in the `Download` folder of your **internal storage**.
+- Download the Windows image and make sure it remains in the `Download` folder of your **internal storage** (if you are using LineageOS 20), else, put it in the `Download` folder in your **SD card**.
 - Download **WinInstaller.zip** and keep it in the `Download` folder as well.
 - Download and install the [WOA Helper app](https://github.com/Marius586/WoA-Helper-update/releases/tag/WOA), then open it and grant it root access. Do not do anything else inside the app yet.
 
@@ -132,6 +132,33 @@ quit
 - Run the **Android** shortcut on your desktop (you can also pin it to your start menu / taskbar for ease of access).
 
 #### Booting to Windows
+> If it says "UEFI NOT FOUND", copy the UEFI image from your SD card into the UEFI folder of your **internal storage**
 - Press **QUICKBOOT TO WINDOWS** inside the WOA Helper app, or use the newly created toggle in your quick settings panel.
 
 ## Finished!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
