@@ -5,6 +5,21 @@
 ## Troubleshooting Issues
 > Below you will find a list of common problems and their solutions
 
+## Mass storage mode does not work
+> If mass storage mode in the modified recovery does not work, try the below method
+- Reboot back into the fastboot mode and download [**msc.img**](https://github.com/n00b69/woa-mh2lm/releases/download/Files/msc.img).
+- Run the below command, replacing `path\to\msc.img` with the actual path of the image.
+```cmd
+fastboot boot path\to\msc.img
+```
+- Once booted into the image, select **UEFI Boot Menu** using your **volume buttons**.
+- Select **USB Attached SCSI (UAS) Storage**.
+- Press the **power** button twice to confirm.
+- Proceed with the Diskpart steps now.
+
+> [!Important]
+> If mass storage with the above method still does not work, try the below method
+
 ## The device reboots in mass storage mode
 > This happens for some users, it is unknown why it happens, to bypass this, do the following:
 - Reboot back into the modified TWRP and run `adb shell parted /dev/block/sda`, then run `print`.
