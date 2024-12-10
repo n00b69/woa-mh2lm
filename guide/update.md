@@ -5,7 +5,9 @@
 ## Updating drivers
 
 ### Prerequisites
-- [Mass storage image](https://github.com/n00b69/woa-mh2lm/releases/download/Files/msc.img)
+- [ADB & Fastboot](https://developer.android.com/studio/releases/platform-tools)
+
+- [Modded TWRP](https://github.com/n00b69/woa-mh2lm/releases/download/Files/modded-twrp-g8x.img)
   
 - [Drivers](https://github.com/n00b69/woa-mh2lm/releases/tag/Drivers)
 
@@ -15,20 +17,19 @@
 > If you don't have access to fastboot, use the instructions in the [partitioning guide](1-partition.md) to flash the engineering ABL.
 - With the device turned off, hold the **volume down** button, then plug the cable in.
 
-#### Boot into the mass storage mode UEFI
-> Replace `path\to\msc.img` with the actual path of the image
+### Boot modified TWRP recovery
+> Replace `path\to\modded-twrp-g8x.img` with the actual path of the image
 ```cmd
-fastboot boot path\to\msc.img
+fastboot boot path\to\modded-twrp-g8x.img
 ```
 
-#### Enabling mass storage mode
-> Once booted into the UEFI, use the volume buttons to navigate the menu and the power button to confirm
-- Select **UEFI Boot Menu**.
-- Select **USB Attached SCSI (UAS) Storage**.
-- Press the **power** button twice to confirm.
+#### Execute the msc script
+```cmd
+adb shell msc
+```
 
 > [!Note]
-> After 1-2 minutes **WINMH2LM** should automatically appear in Windows Explorer. If it does, skip to the "Installing drivers" step, else continue with the "Diskpart" steps.
+> **WINMH2LM** should automatically appear in Windows Explorer. If it does, skip to the "Installing drivers" step, else continue with the "Diskpart" steps.
 
 ### Diskpart
 ```cmd
