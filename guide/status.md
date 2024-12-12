@@ -20,7 +20,7 @@ Beta. Most of the hardware works, but some components do not work yet.
 - [ ] Flashlight
 - [x] GPU ```graphics in portrait may appear corrupted```
 - [ ] LTE/SMS
-- [ ] Microphone
+- [x] Microphone
 - [x] SD card
 - [x] Touchscreen
 - [x] UFS
