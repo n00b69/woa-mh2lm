@@ -15,20 +15,23 @@ Beta. Most of the hardware works, but some components do not work yet.
 - [x] Charging (USB) ```VERY slow```
 - [x] Charging (Wireless)
 - [x] Display
-- [ ] Dual Screen For LG
-- [x] GPU
+- [ ] DisplayPort ```will likely never work```
+- [ ] Dualscreen ```will likely never work```
+- [ ] Flashlight
+- [x] GPU ```graphics in portrait may appear corrupted```
 - [ ] LTE/SMS
-- [x] SD Card
+- [ ] Microphone
+- [x] SD card
 - [x] Touchscreen
 - [x] UFS
-- [x] USB ```doesn't work after charging```
+- [x] USB
 - [x] WiFi
 
 #### Sensors
-- [ ] Accelerometer
+- [x] Accelerometer
 - [ ] Fingerprint
 - [x] GPS
-- [ ] Gyroscope
+- [x] Gyroscope
 - [ ] Light sensor
 - [ ] Magnetometer
 - [ ] Proximity
