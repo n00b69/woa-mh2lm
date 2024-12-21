@@ -13,12 +13,14 @@ All the files here have been contributed by other users, here you will find a gu
 > [!Important]
 > This guide is for the LG G8x. Click the links here if you are looking for the [LG G8s](https://github.com/n00b69/woa-betalm) or the [LG G8](https://github.com/n00b69/woa-alphaplus) guides.
 
+
 ## Get started
 - [Project status](guide/status.md)
 
 - [Installation instructions](guide/installation-selection.md)
 
 - [Troubleshooting](guide/troubleshooting.md)
+
 
 ## Miscellaneous
 - [Dualboot setup](guide/dualboot.md)
@@ -31,8 +33,15 @@ All the files here have been contributed by other users, here you will find a gu
 
 - [Uninstall instructions](guide/uninstall.md)
 
-## Contributors
+
+## Maintainers
+[<img alt="Project Aloha" src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/118143494?s=200&v=4&w=45&fit=cover&mask=circle&maxage=7d" />](https://github.com/Project-Aloha)
+[<img alt="remtrik" src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/69907487?v=4&w=45&fit=cover&mask=circle&maxage=7d" />](https://github.com/remtrik)
+[<img alt="Icesito68" src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/113939920?v=4&w=45&fit=cover&mask=circle&maxage=7d" />](https://github.com/Icesito68)
 [<img alt="MollySophia" src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/20746884?v=4&w=45&fit=cover&mask=circle&maxage=7d" />](https://github.com/MollySophia)
+
+
+## Contributors
 [<img alt="Renegade Project Discord Members" src="https://images.weserv.nl/?url=https://cdn.discordapp.com/icons/736563593058713690/68f67bfddf4390b11effc99917b16338.webp?size=256&w=45&fit=cover&mask=circle&maxage=7d" />](https://discord.gg/XXBWfag)
 [<img alt="gus33000" src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/3755345?v=4&w=45&fit=cover&mask=circle&maxage=7d" />](https://github.com/gus33000)
 [<img alt="map220v" src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/14368485?v=4&w=45&fit=cover&mask=circle&maxage=7d" />](https://github.com/map220v)
