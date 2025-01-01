@@ -135,7 +135,7 @@ quit
 - In TWRP, select **Install** and then locate **WinInstaller.zip** and flash it.
 - Once you're given the option to reboot, do so.
 > [!Note]
-> Wait untill all processes complete and your device boots into Windows. This will take around 15-20 minutes.
+> Wait until all processes complete and your device boots into Windows. This will take around 15-20 minutes.
 
 > [!Tip]
 > If you wish to skip the Microsoft Account login, press the **I don't have internet** button in the WiFi page, then when prompted, press the **Continue with limited setup** button.
@@ -148,29 +148,6 @@ quit
 - Press **QUICKBOOT TO WINDOWS** inside the WOA Helper app, or use the newly created toggle in your quick settings panel.
 
 ## Finished!
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
