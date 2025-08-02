@@ -15,8 +15,8 @@ Beta. Most of the hardware works, but some components do not work yet.
 - [x] Charging (USB) ```VERY slow```
 - [x] Charging (Wireless)
 - [x] Display
-- [ ] DisplayPort ```will likely never work```
-- [ ] Dualscreen ```will likely never work```
+- [ ] DisplayPort
+- [ ] LG Dual Screen G8X ThinQ
 - [ ] Flashlight
 - [x] GPU ```graphics in portrait may appear corrupted```
 - [ ] LTE/SMS
@@ -25,6 +25,7 @@ Beta. Most of the hardware works, but some components do not work yet.
 - [x] Touchscreen
 - [x] UFS
 - [x] USB
+- [ ] Vibration
 - [x] WiFi
 
 #### Sensors
